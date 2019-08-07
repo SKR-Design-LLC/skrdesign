@@ -1,0 +1,66 @@
+{{!-- This is the base layout for your project, and will be used on every INTERNAL page, except index/home. --}}
+<!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="{{description}}.">
+    <meta name="keywords" content="Sarah Russell Website Developer, Frontend Website Developer, SKR Design LLC, Website Builder">
+    <title>{{title}} - SKR Design LLC, Sarah K. Russell</title>
+    <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
+    <link rel="stylesheet" href="{{root}}assets/css/app.css" />
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10951458-3"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-10951458-3');
+    </script>
+    <!-- END  Global site tag - Google Analytics -->
+  </head>
+  <body>
+
+    <div class="subpage__navmenu off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlay" data-reveal-on="large">
+
+      <button class="close-button" aria-label="Close menu" type="button" data-close>
+        <span aria-hidden="true">X</span>
+      </button>
+      <div class="subpage__navmenu_title">Chapters Menu</div>
+        <ol class="subpage__navmenu_ul menu vertical">
+          {{> menu}}
+        </ol>
+
+    </div>
+
+      <div class="main">
+        <div class="off-canvas-content" data-off-canvas-content>
+
+          <div class="subpage">
+
+                <div class="subpage__grid_container">
+
+                      <header class="subpage__menu">
+                            <a type="button" data-toggle="offCanvas">Chapters Menu</a>
+                      </header>
+                        {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
+
+                        {{> body}}
+
+                </div>
+                <!-- end subpage__grid_container -->
+
+          </div>
+          <!-- end subpage -->
+        </div>
+        <!-- end off-canvas-content -->
+      </div>
+
+    <script src="{{root}}assets/js/app.js"></script>
+    {{> scripts}}
+  </body>
+</html>
