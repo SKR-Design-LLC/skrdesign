@@ -6,6 +6,8 @@
 @import 'global/_typography';
 @import 'global/_my_settings';
 @import 'global/_book_app';
+
+
 // Global styles
 @include foundation-global-styles;
 //@include foundation-forms;
@@ -75,4 +77,12 @@
 body {
   font-size-adjust: 0.403;
   font-size: 1.2rem;
+}
+
+.screen_reader_accessible {
+  display: none;
+  width:0;
+  height: 0;
+  color: $black;
+  background: $white;
 }

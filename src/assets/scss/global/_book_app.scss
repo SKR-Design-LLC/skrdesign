@@ -166,6 +166,8 @@
     margin-bottom: 4.5rem;
   }
 
+
+
   &__navmenu {
     .close-button {
       z-index: 4;
@@ -181,10 +183,10 @@
       margin: 1.5rem 1rem 0 1rem;
     }
 
-    &_ol {
+    &_ol.menu {
       padding: 0;
       list-style: number;
-      margin: 1rem 1.5rem 2rem 3.250rem;
+      margin: 1rem 1.5rem 2rem 2.5rem;
       li {
           padding-left: 0;
         a {
@@ -206,6 +208,9 @@
     }
 
   }
+
+
+
 
 
   &__grid_container {
@@ -526,4 +531,10 @@ ul#sitemap_menu {
   		// Set a specific height
   		height: 30vh;
   	}
+}
+
+#bookmark_icon {
+  color: $black;
+  font-size: 1.7rem;
+  transform: rotate(180deg);
 }

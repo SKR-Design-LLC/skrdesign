@@ -8,6 +8,7 @@
     <meta name="description" content="{{description}}.">
     <meta name="keywords" content="Sarah Russell Website Developer, Frontend Website Developer, SKR Design LLC, Website Builder">
     <title>{{title}} - SKR Design LLC, Sarah K. Russell</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=EB+Garamond:400,400i,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Libre+Baskerville" rel="stylesheet">
     <link rel="stylesheet" href="{{root}}assets/css/app.css" />
@@ -30,8 +31,8 @@
       <button class="close-button" aria-label="Close menu" type="button" data-close>
         <span aria-hidden="true">X</span>
       </button>
-      <div class="subpage__navmenu_title">Chapters Menu</div>
-        <ol class="subpage__navmenu_ul menu vertical">
+      <div class="subpage__navmenu_title"><i class="fa fa-bookmark" id="bookmark_icon" aria-hidden="true"><span class="screen_reader_accessible">Bookmark Icon</span></i> Chapters Index</div>
+        <ol class="subpage__navmenu_ol menu vertical">
           {{> menu}}
         </ol>
 
@@ -45,7 +46,7 @@
                 <div class="subpage__grid_container">
 
                       <header class="subpage__menu">
-                            <a type="button" data-toggle="offCanvas">Chapters Menu</a>
+                            <a type="button" data-toggle="offCanvas">Chapters Index</a>
                       </header>
                         {{!-- Pages you create in the src/pages/ folder are inserted here when the flattened page is created. --}}
 
