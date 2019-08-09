@@ -38,16 +38,19 @@
     <!-- END  Global site tag - Google Analytics -->
   </head>
   <body>
+    <div id="skiptocontent"><a href="#main_content">Skip navigation to main content</a></div>
 
     <div class="subpage__navmenu off-canvas position-right" id="offCanvas" data-off-canvas data-transition="overlay" data-reveal-on="large">
 
       <button class="close-button" aria-label="Close menu" type="button" data-close>
-        <span aria-hidden="true">X</span>
+        <span aria-hidden="true"><span class="screen_reader_accessible">Close Menu</span>X</span>
       </button>
       <div class="subpage__navmenu_title"><i class="fa fa-bookmark" id="bookmark_icon" aria-hidden="true"><span class="screen_reader_accessible">Bookmark Icon</span></i> Chapters Index</div>
-        <ol class="subpage__navmenu_ol menu vertical">
-          {{> menu}}
-        </ol>
+        <nav aria-label="Main Navigation" role="navigation">
+          <ol class="subpage__navmenu_ol menu vertical">
+            {{> menu}}
+          </ol>
+        </nav>
 
     </div>
 

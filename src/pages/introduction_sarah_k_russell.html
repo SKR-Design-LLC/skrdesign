@@ -1,12 +1,14 @@
 ---
 title: Chapter One; Introduction to the Website Developer; Sarah K. Russell
 description: The inspiration for this website build. How I became a wedsite developer over 16 years ago at the University of Alberta
+chapter: One
+page_number: 2
 ---
 
 <article class="subpage__left">
 
       <div class="subpage__left_contents">
-            <div class="subpage__left_chapter">Chapter One</div>
+            <div class="subpage__left_chapter" id="main_content" role="main">Chapter {{chapter}}</div>
             <h1>Introduction to the<br />Website Developer;</h1>
             <h2>Sarah K. Russell</h2>
 
@@ -25,7 +27,7 @@ description: The inspiration for this website build. How I became a wedsite deve
 
         <p>In 2019 this portfolio site has been rebuilt to pay homage to those days in the library surrounded by glorious &mdash; books. Books and websites are very much the same &mdash; a medium for information or telling a story. The site format allowed me to focus on the graphic design of the page structure with a emphasis on typography.</p>
 
-        <p><em>This mobile first, responsive site was built with a Foundation base, the homepage is a Flexbox layout while the interior page layout was more suited to CSS Grid.</em></p>
+        <p><em>This mobile first, responsive site was built with a Foundation base, the homepage is a Flexbox layout while the interior page layout was more suited to CSS Grid. SEO optimized and AA ADA compliant.</em></p>
 
         <ul class="subpage__right_contents_list">
           <li><p>Contact: <a href="mailto:info@skrdesign.com?subject=Inquiry%20From%20SKRDesign%20Site">info@skrdesign.com</a></p></li>
@@ -39,9 +41,4 @@ description: The inspiration for this website build. How I became a wedsite deve
 
 </aside>
 
-<footer>
-      <div class="subpage__page_number_hedera">
-            <div>p. 2</div>
-            <button class="top-button" aria-label="Back to top" type="button"><span aria-hidden="true">&#10087</span></button>
-      </div>
-</footer>
+{{> footer}}

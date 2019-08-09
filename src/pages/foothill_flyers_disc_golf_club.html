@@ -1,12 +1,14 @@
 ---
 title: Chapter Three; Foothill Flyers, Colorado Disc Golf Club
 description: My latest website build using CSS Grid
+chapter_number: Three
+page_number: 6
 ---
 
             <article class="subpage__left">
 
                   <div class="subpage__left_contents">
-                    <div class="subpage__left_chapter">Chapter Three</div>
+                    <div class="subpage__left_chapter" id="main_content" role="main">Chapter {{chapter_number}}</div>
                     <h1>Foothill Flyers</h1>
                     <h2>Colorado Disc Golf Club</h2>
 
@@ -27,9 +29,4 @@ description: My latest website build using CSS Grid
 
             </aside>
 
-            <footer>
-                  <div class="subpage__page_number_hedera">
-                        <div>p. 6</div>
-                        <button class="top-button" aria-label="Back to top" type="button"><span aria-hidden="true">&#10087</span></button>
-                  </div>
-            </footer>
+            {{> footer}}

@@ -1,12 +1,14 @@
 ---
 title: Chapter Six; Dr. Peter B. Raabe
 description: Academic website build for a Philosophical Counselor and professor
+chapter_number: Six
+page_number: 12
 ---
 
 <article class="subpage__left">
 
       <div class="subpage__left_contents">
-        <div class="subpage__left_chapter">Chapter Six</div>
+        <div class="subpage__left_chapter" id="main_content" role="main">Chapter {{chapter_number}}</div>
         <h1>Peter B. Raabe, PH.D.</h1>
         <h2>A Philosophical Counselling Website</h2>
 
@@ -27,9 +29,4 @@ description: Academic website build for a Philosophical Counselor and professor
 
 </aside>
 
-<footer>
-      <div class="subpage__page_number_hedera">
-            <div>p. 12</div>
-            <button class="top-button" aria-label="Back to top" type="button"><span aria-hidden="true">&#10087</span></button>
-      </div>
-</footer>
+{{> footer}}
