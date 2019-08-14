@@ -113,6 +113,7 @@
   }
 
   &__menu_list {
+    margin-top: 1rem;
     margin-left: 2.55rem;
       &__subtitle {
           font-style: italic;
@@ -131,12 +132,12 @@
         padding-left: 0.425rem;
         margin-bottom: 1.1rem;
 
-          &:first-child a {
-              pointer-events: none;
-              cursor: default;
-              text-decoration: none;
-              color: $text-black;
-          }
+          // &:first-child a {
+          //     pointer-events: none;
+          //     cursor: default;
+          //     text-decoration: none;
+          //     color: $text-black;
+          // }
       }
 
       @include breakpoint(medium) {
@@ -479,6 +480,11 @@ ul#sitemap_menu {
          color: $anchor-color;
        }
     }
+}
+
+.menu_list__first_item {
+  list-style: none;
+  margin-left: 0;
 }
 
 // Parallax
