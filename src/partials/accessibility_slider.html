@@ -1,0 +1,28 @@
+<aside class="accessibility_slider" role="article">
+  <header><button class="accessibility_slider__title" aria-expanded="false">Accessibility Helpers</button></header>
+  <ul>
+    <li><button type="button" name="dark_light_mode" onclick="darkLightToggle()" title="Toggle light / dark mode">Dark Mode - off</button></li>
+    <li><button type="button" name="contrast_mode" onclick="contrastModeToggle()" title="Toggle dark/light mode">Contrast - off</button></li>
+    <li><button type="button" name="large_text_mode" onclick="largeTextModeToggle()" title="Toggle large text mode">Large Text - off</button></li>
+    <li><button type="button" name="text_spacing_mode" onclick="textSpacingModeToggle()" title="Toggle spacing mode">Spacing - off</button></li>
+  </ul>
+</aside>
+
+<script>
+function darkLightToggle() {
+  var body = document.getElementById("body");
+  var currentClass = body.className;
+  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+}
+
+$(".saccessibility_slider__title").on("click", function() {
+  $(".accessibility_slider").toggleClass("open closed");
+  $(".accessibility_slider__title").toggleClass("black");
+  $(".accessibility_slider__title_span_close").toggleClass("show-inline hidden");
+
+  $(this).attr("aria-expanded", function (i, attr) {
+    return attr == "true" ? "false" : "true";
+  });
+});
+
+</script>

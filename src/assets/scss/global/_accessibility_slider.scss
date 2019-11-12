@@ -1,0 +1,21 @@
+.accessibility_slider {
+  width: 10rem;
+  background: $white;
+  color: $black;
+  cursor: pointer;
+
+  ul {
+    list-style: none;
+    margin-left: 0;
+  }
+
+  button {
+    color: $brown;
+    padding: .25rem;
+    text-decoration: underline;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}

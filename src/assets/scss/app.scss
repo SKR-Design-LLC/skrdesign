@@ -6,6 +6,7 @@
 @import 'global/_typography';
 @import 'global/_my_settings';
 @import 'global/_book_app';
+@import 'global/_accessibility_slider';
 
 
 // Global styles
@@ -77,6 +78,16 @@
 body {
   font-size-adjust: 0.403;
   font-size: 1.2rem;
+  transition: background-color 0.45s ease, color 0.45s ease;
+
+  .light_mode {
+    background: $white;
+    color: $black;
+  }
+  .dark_mode {
+    background: $black;
+    color: $white;
+  }
 }
 
 .screen_reader_accessible {
