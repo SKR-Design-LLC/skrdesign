@@ -1,10 +1,10 @@
 <aside class="accessibility_slider" role="article">
   <header><button class="accessibility_slider__title" aria-expanded="false">Accessibility Helpers</button></header>
   <ul>
-    <li><button type="button" name="dark_light_mode" onclick="darkLightToggle()" title="Toggle light / dark mode">Dark Mode - off</button></li>
-    <li><button type="button" name="contrast_mode" onclick="contrastModeToggle()" title="Toggle dark/light mode">Contrast - off</button></li>
-    <li><button type="button" name="large_text_mode" onclick="largeTextModeToggle()" title="Toggle large text mode">Large Text - off</button></li>
-    <li><button type="button" name="text_spacing_mode" onclick="textSpacingModeToggle()" title="Toggle spacing mode">Spacing - off</button></li>
+    <li><button type="button" name="dark_light_mode" class="dark_mode" onclick="darkLightToggle()" title="Toggle light / dark mode" >Dark Mode - OFF</button></li>
+    <li><button type="button" name="contrast_mode" class="contrast_mode" onclick="contrastModeToggle()" title="Toggle dark/light mode">Contrast - OFF</button></li>
+    <li><button type="button" name="large_text_mode" class="large_text_mode" onclick="largeTextModeToggle()" title="Toggle large text mode">Large Text - OFF</button></li>
+    <li><button type="button" name="text_spacing_mode" class="text_spacing_mode" onclick="textSpacingModeToggle()" title="Toggle spacing mode">Spacing - OFF</button></li>
   </ul>
 </aside>
 
@@ -12,7 +12,8 @@
 function darkLightToggle() {
   var body = document.getElementById("body");
   var currentClass = body.className;
-  body.className = currentClass == "dark-mode" ? "light-mode" : "dark-mode";
+  body.className = currentClass == "dark_mode" ? "light_mode" : "dark_mode";
+  body.text = currentText == "OFF" ? "ON" : "OFF";
 }
 
 $(".saccessibility_slider__title").on("click", function() {
