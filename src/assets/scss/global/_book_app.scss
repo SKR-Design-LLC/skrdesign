@@ -25,6 +25,11 @@
     -webkit-box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.1), inset -20px 0px 20px 0px rgba(0, 0, 0, 0.2);
     -moz-box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.1), inset -20px 0px 20px 0px rgba(0, 0, 0, 0.2);
     box-shadow: 4px 1px 4px  rgba(0, 0, 0, 0.1), inset -20px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    &::after {
+      -webkit-box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.1), inset -20px 0px 20px 0px rgba(0, 0, 0, 0.2);
+      -moz-box-shadow: 4px 1px 4px rgba(0, 0, 0, 0.1), inset -20px 0px 20px 0px rgba(0, 0, 0, 0.2);
+      box-shadow: 4px 1px 4px  rgba(0, 0, 0, 0.1), inset -20px 0px 20px 0px rgba(0, 0, 0, 0.2);
+    }
     @include breakpoint(medium) {
       width: 20%;
       margin-left: -68px;
@@ -32,12 +37,14 @@
     @include breakpoint(large) {
       width: 10%;
     }
+
+
   }
 
   &__base {
     display: block;
     position: relative;
-    width: 91%;
+    width: 95%;
     padding-bottom: 2rem;
     border-right: .005rem solid #999;
     background: $light-white;
@@ -303,7 +310,31 @@
       }
   }
 
+  .page_left, .page_right {
+    width: 102%;
+    background: $light-white;
+    border-bottom: 1px sold gray;
+    &:before {
 
+      border-bottom: 1px sold gray;
+    }
+    &:after {
+
+      border-bottom: 1px sold gray;
+    }
+  }
+
+  .page_left {
+    border-left: 1px sold gray;
+    &:before {border-left: 1px sold gray;}
+    &:after {border-left: 1px sold gray;}
+  }
+
+  .page_right {
+    border-right: 1px sold gray;
+    &:before {border-right: 1px sold gray;}
+    &:after {border-right: 1px sold gray;}
+  }
 
 
   article {
