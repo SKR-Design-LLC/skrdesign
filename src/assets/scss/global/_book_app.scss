@@ -1,10 +1,9 @@
-.close-button {
-  &:focus {
-    color: $black;
+button.close-button {
+  color: $black;
+  &:focus, &:active, &:hover {
+    color: $maroon;
   }
-
 }
-
 
 .home {
   display: flex;
@@ -502,19 +501,8 @@
   margin-top: 4rem;
 }
 
-ul#sitemap_menu {
-  list-style: none;
-    li {
-      line-height: 1.5;
-      padding-bottom: 1.125rem;
-
-       &:first-child a {
-         pointer-events: auto;
-         cursor: pointer;
-         text-decoration: underline;
-         color: $anchor-color;
-       }
-    }
+ol#sitemap_menu > li:last-child {
+  display: none;
 }
 
 .menu_list__first_item {
@@ -574,7 +562,7 @@ ul#sitemap_menu {
   	}
 }
 
-.subpage__right_contents img {
+.subpage__right_contents img.image_background {
   background: #EDEDED;
   padding: .25rem;
 }
