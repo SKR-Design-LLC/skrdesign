@@ -5,7 +5,9 @@
 @import 'motion-ui';
 @import 'global/_typography';
 @import 'global/_my_settings';
-@import 'global/_book_app';
+@import 'global/_book_settings_base';
+@import 'global/_book_settings_home';
+@import 'global/_book_settings_subpages';
 @import 'global/_accessibility_slider';
 
 
@@ -68,55 +70,8 @@
 @include motion-ui-transitions;
 @include motion-ui-animations;
 
-
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
-}
-
-body {
-  font-size-adjust: 0.403;
-  font-size: 1.2rem;
-  transition: background-color 0.45s ease, color 0.45s ease;
-
-  .light_mode {
-    background: $white;
-    color: $black;
-  }
-  .dark_mode {
-    background: $black;
-    color: $white;
-  }
-}
-
-.screen_reader_accessible {
-  display: none;
-  width:0;
-  height: 0;
-  color: $black;
-  background: $white;
-}
-
-#skiptocontent a {
-  position:absolute;
-  left:-10000px;
-  top:auto;
-  width:1px;
-  height:1px;
-  overflow:hidden;
-  background-color: #B22222;
-  color: $white;
-  z-index: 20;
-  &:focus {
-    position:relative;
-    width:100vw;
-    left:0;
-    height:auto;
-    padding: .5rem 1rem;
-    display: block;
-  }
-  &:hover, &:active {
-    color: #D6D6D6;
-  }
 }

@@ -1,0 +1,119 @@
+body {
+  font-size-adjust: 0.403;
+  font-size: 1.2rem;
+  transition: background-color 0.45s ease, color 0.45s ease;
+
+  .light_mode {
+    background: $white;
+    color: $black;
+  }
+  .dark_mode {
+    background: $black;
+    color: $white;
+  }
+}
+
+.screen_reader_accessible {
+  display: none;
+  width:0;
+  height: 0;
+  color: $black;
+  background: $white;
+}
+
+#skiptocontent a {
+  position:absolute;
+  left:-10000px;
+  top:auto;
+  width:1px;
+  height:1px;
+  overflow:hidden;
+  background-color: #B22222;
+  color: $white;
+  z-index: 20;
+  &:focus {
+    position:relative;
+    width:100vw;
+    left:0;
+    height:auto;
+    padding: .5rem 1rem;
+    display: block;
+  }
+  &:hover, &:active {
+    color: #D6D6D6;
+  }
+}
+
+
+button.close-button {
+  color: $black;
+  &:focus, &:active, &:hover {
+    color: $maroon;
+  }
+}
+
+.copyright {
+  font-style: italic;
+  font-size:$small-font-size;
+  margin-top: 4rem;
+}
+
+
+// Parallax
+.parallax {
+
+	position: relative;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+
+    &_figure {
+  		// The image used
+  		background-image: url("/assets/img/mountainr_me_effect_Layer_smFigure.png");
+  		// Set a specific height
+  		height: 100vh;
+
+  	}
+
+  	&_ground {
+  		// The image used
+  		background-image: url("/assets/img/mountainr_me_effect_Layer_Ground.png");
+  		// Set a specific height
+  		height: 30vh;
+  		// height: 500px;
+  	}
+
+
+  	&_water {
+  		// The image used
+  		background-image: url("/assets/img/mountainr_me_effect_Layer_Water.png");
+  		// Set a specific height
+  		height: 300vh;
+  		// height: 31.25em;
+  	}
+
+
+  	&_mountains {
+  		// The image used
+  		background-image: url("/assets/img/mountainr_me_effect_Layer_Mountains.png");
+  		// Set a specific height
+  		height: 30vh;
+  		//height: 500px;
+  	}
+
+
+  	&_sky {
+  		// The image used
+  		background-image: url("/assets/img/mountainr_me_effect_Layer_Sky.png");
+  		// Set a specific height
+  		height: 30vh;
+  	}
+}
+
+
+#bookmark_icon {
+  color: $black;
+  font-size: 1.7rem;
+  transform: rotate(180deg);
+}
