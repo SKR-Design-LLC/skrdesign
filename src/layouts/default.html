@@ -26,16 +26,7 @@
     <meta name="msapplication-TileColor" content="#FFFFFF" />
     <meta name="msapplication-TileImage" content="{{root}}/assets/img/fav/mstile-144x144.png" />
 
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-10951458-3"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-10951458-3');
-    </script>
-    <!-- END  Global site tag - Google Analytics -->
+    {{> ga-tracking}}
   </head>
   <body id="body" class="light_mode">
     <div id="skiptocontent"><a href="#main_content">Skip navigation to main content</a></div>
